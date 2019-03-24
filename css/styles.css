@@ -1,5 +1,5 @@
 /*Color Wheel
-offwhite - #DFDFE0
+offwhite - #F8f8f8
 */
 
 html{
@@ -8,12 +8,20 @@ html{
 }
 
 body{
-  width: 100%;
   font-size: 1em;
   min-height: 100vh;
   font-family: 'Neuton', sans-serif;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+}
+
+body,
+.header-wrapper,
+.bottomFooter,
+.main-title,
+.main-nav,
+.contact{
+  width: 100%;
 }
 
 .header-wrapper,
@@ -28,6 +36,7 @@ body{
   align-items: center;
 }
 
+h1,
 h2,
 h3,
 p,
@@ -61,14 +70,14 @@ header,
 }
 
 header p,
-main p{
+main p,
+footer p{
   padding: 0 1em;
 }
 
-header p,
-footer p{
+header p{
   width: 80%;
-  font-size: 1.4em
+  font-size: 1.8em;
 }
 
 main p{
@@ -78,15 +87,25 @@ main p{
   margin-bottom: 1.5em;
 }
 
-.bottomFooter{
-  flex-direction: row;
-  width: 100%;
+footer p{
+  font-size: 1.6em;
 }
 
+.bottomFooter{
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 .portfolioPics{
  max-width: 25em;
  height: auto;
+}
+
+
+.backToTop{
+  background-color: #F8f8f8;
+  font-size: 1em;
+  text-transform: none;
 }
 
 a{
@@ -101,20 +120,27 @@ a{
 }
 
 @media only screen and (min-width: 768px) {
-    .main-nav{
+    .header-wrapper{
+      padding: 1em 0;
+    }
+
+    header p{
+      text-align: justify;
+    }
+
+    .main-nav,
+    .wrapper{
       display: flex;
       flex-direction: row;
-      width: 60%;
+    }
+
+    .main-nav{
+        width: 60%;
     }
 
     .profile-wrapper{
       padding: 0 1.8em 2em 0;
-    }
-
-    .wrapper{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
+      align-items: flex-start;
     }
 
     .col{
@@ -129,12 +155,20 @@ a{
       background-color: #F8f8f8;
     }
 
+    footer p{
+      width: 47%;
+    }
   }
 
 @media only screen and (min-width: 1024px) {
   .header-wrapper{
     display: flex;
     flex-direction: row;
+  }
+
+  h1{
+    text-align: left;
+    margin-left: 1em;
   }
 
   .col{
