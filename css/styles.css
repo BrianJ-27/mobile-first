@@ -8,6 +8,7 @@ html{
 }
 
 body{
+  background-color: #F8f8f8;
   font-size: 1em;
   min-height: 100vh;
   font-family: 'Neuton', sans-serif;
@@ -22,6 +23,12 @@ body,
 .main-nav,
 .contact{
   width: 100%;
+}
+
+main{
+  background-color: #fff;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .header-wrapper,
@@ -45,28 +52,29 @@ a,
   text-align: center;
 }
 
+.portfolioPics{
+  width: 20em;
+}
+
 h1{
   font-size: 2.2em;
 }
 
 h2{
   text-transform: uppercase;
-  margin: 2em 0;
+  margin: 1em 0;
+  padding: 2em 0;
 }
 
 h3{
   font-size: 1.5em;
 }
 
-header,
-.footer-wrapper{
-  background-color: #F8f8f8;
-}
-
 .main-pic{
   height: auto;
   margin-top: 2em;
   width: 65%;
+  max-width: 30em;
 }
 
 header p,
@@ -109,7 +117,7 @@ footer p{
 }
 
 a{
-  width: 90%;
+  width: 80%;
   font-size: 1.5em;
   padding: .5em 1em;
   margin-bottom: .3em;
@@ -117,6 +125,10 @@ a{
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
+}
+
+span{
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) {
@@ -135,7 +147,11 @@ a{
     }
 
     .main-nav{
-        width: 60%;
+      width: 50%;
+    }
+
+    .wrapper{
+      flex-wrap: wrap;
     }
 
     .profile-wrapper{
@@ -144,7 +160,7 @@ a{
     }
 
     .col{
-      width: 50%;
+      width: 48%;
     }
 
     .profile-wrapper{
