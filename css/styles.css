@@ -94,6 +94,7 @@ img{
 }
 
 .backToTop{
+  display: block;
   float: right;
   margin-right: .5em;
   text-decoration: none;
@@ -114,7 +115,7 @@ img{
   padding: 1em 0;
 }
 
-.bottomFooter2{
+.bottom-nav{
   display: none;
 }
 
@@ -138,14 +139,14 @@ img{
   font-size: 1.8em;
 }
 
-.col,
-.main-img{
+.col{
   float: left;
 }
 
 .main-img{
   max-width: 500px;
   margin-right: 1.5em;
+  float: right;
 }
 
 
@@ -156,35 +157,31 @@ img{
 
 /*-------------Footer Styles----------*/
 
- .bottomFooter2 .main-nav{
-    display: inline;
-    margin: 0 auto;
-    text-align: center;
-    float: right;
- }
-
-.bottomName,
-.bottomFooter2,
-.main-nav li{
-  display: inline-block;
-  background-color: inherit;
+.backToTop{
+  display: none;
 }
 
-  .bottomFooter{
-    display: none;
-  }
+.bottom-nav{
+  display: block;
+  float: right;
+  padding-left: 1em;
+}
 
-  .bottomFooter2{
-    padding-bottom: 5em;
-  }
+.bottom-nav li{
+  display: inline-block;
+  padding: 0 .5em;
+}
 
- .bottomFooter2 .bottomName{
-    font-weight: bold;
-  }
+.bottom-nav li a{
+  text-decoration: none;
+  color: #000;
+}
 
-.bottomFooter2 .main-nav a{
-    font-size: 1em;
-  }
+.bottomName,
+.bottom-nav{
+  font-size: 1.2em;
+  font-weight: bolder;
+}
 
   footer p{
     width: 60%;
