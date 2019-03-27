@@ -65,6 +65,7 @@ img{
 
 .main-img{
   margin: 4em 0 0 0;
+  padding-bottom: 2em;
 }
 
 .main-img,
@@ -119,41 +120,67 @@ img{
 
 @media only screen and (min-width: 768px) {
 
+/*-------------Header Styles----------*/
+.profile p{
+  width: 50%;
+  margin: 0 0 0 1.5em;
+  text-align: left;
+  font-size: 1.8em;
+}
+
+
 .container,
 .main-img{
   float: right;
+}
+
+.main-img{
+  max-width: 500px;
+  margin-right: 1.5em;
+}
+
+.main-nav{
+    display: block;
+    text-align: center;
 }
 
 .container{
   width: 50%;
 }
 
-.main-nav{
+div .bottomFooter2 .main-nav{
+    display: inline;
     margin: 0 auto;
     text-align: center;
+    float: right;
 }
 
+.bottomName,
+.bottomFooter2,
 .main-nav li{
   display: inline-block;
-  background-color: #f8f8f8;
-
+  background-color: inherit;
 }
-
-  .profile p{
-    font-size: 2em;
-    text-align: left;
-  }
 
   .bottomFooter{
     display: none;
   }
 
-  .bottomName{
-    width: 50%;
+  .bottomFooter2{
+    padding-bottom: 5em;
   }
 
-  .bottomFooter2{
-    display: inline;
+ .bottomFooter2 .bottomName{
+    font-weight: bold;
+  }
+
+.bottomFooter2 .main-nav a{
+    font-size: 1em;
+  }
+
+
+  footer p{
+    width: 60%;
   }
 
   .clearfix::after{
@@ -169,8 +196,8 @@ img{
     margin-top: 5px;
   }
 
-  .profile{
-    width: 90%;
+  .profile p{
+    font-size: 2em;
   }
 
   .container{
@@ -178,7 +205,6 @@ img{
   }
 
   .main-nav{
-      display: inline;
       float: right;
   }
 
