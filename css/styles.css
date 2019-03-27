@@ -1,11 +1,14 @@
 /*Color Wheel
 offwhite - #F8f8f8
 */
+
+/*------Global Styles---------*/
+
 *{
   box-sizing: border-box;
 }
 
-/*------Base Styles------*/
+/*------Base Element Styles------*/
 body{
   background-color: #F8f8f8;
   font-family: 'Neuton', sans-serif;
@@ -54,7 +57,7 @@ span{
   margin: 0 auto;
 }
 
-.container{
+.col{
   margin: 0 auto;
 }
 
@@ -98,9 +101,6 @@ img{
   text-transform: uppercase;
 }
 
-.bottomFooter2{
-  display: none;
-}
 /*-----Profile Styles------*/
 
 .profile{
@@ -114,6 +114,10 @@ img{
   padding: 1em 0;
 }
 
+.bottomFooter2{
+  display: none;
+}
+
 .bottomName{
   margin-left: .5em;
 }
@@ -121,6 +125,12 @@ img{
 @media only screen and (min-width: 768px) {
 
 /*-------------Header Styles----------*/
+
+.main-nav{
+    display: block;
+    text-align: center;
+}
+
 .profile p{
   width: 50%;
   margin: 0 0 0 1.5em;
@@ -128,10 +138,9 @@ img{
   font-size: 1.8em;
 }
 
-
-.container,
+.col,
 .main-img{
-  float: right;
+  float: left;
 }
 
 .main-img{
@@ -139,21 +148,20 @@ img{
   margin-right: 1.5em;
 }
 
-.main-nav{
-    display: block;
-    text-align: center;
-}
 
-.container{
+/*-------------Main Styles----------*/
+.col{
   width: 50%;
 }
 
-div .bottomFooter2 .main-nav{
+/*-------------Footer Styles----------*/
+
+ .bottomFooter2 .main-nav{
     display: inline;
     margin: 0 auto;
     text-align: center;
     float: right;
-}
+ }
 
 .bottomName,
 .bottomFooter2,
@@ -178,11 +186,10 @@ div .bottomFooter2 .main-nav{
     font-size: 1em;
   }
 
-
   footer p{
     width: 60%;
   }
-
+/*-------------Clearfix Styles----------*/
   .clearfix::after{
 	content:"";
 	display: table;
@@ -192,6 +199,7 @@ div .bottomFooter2 .main-nav{
 
 @media only screen and (min-width: 1024px) {
 
+/*-------------Header Styles----------*/
   h1{
     margin-top: 5px;
   }
@@ -200,15 +208,15 @@ div .bottomFooter2 .main-nav{
     font-size: 2em;
   }
 
-  .container{
-    width: 33.33%;
-  }
-
   .main-nav{
       float: right;
   }
 
   .name{
     float: left;
+  }
+/*-------------Main Styles----------*/
+  .col{
+    width: 33.33%;
   }
 }
