@@ -109,6 +109,11 @@ img{
 }
 
 /*------Navigation Styles------*/
+.main-nav{
+  width: 95%;
+  margin: 0 auto;
+}
+
 .main-nav li{
   list-style-type: none;
   background-color: #fff;
