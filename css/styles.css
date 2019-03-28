@@ -41,7 +41,6 @@ h1,
 h2,
 h3,
 p,
-ul,
 .main-nav li{
   text-align: center;
 }
@@ -146,6 +145,11 @@ transition: border-bottom 0.4s, color 0.4s;
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
+}
+
+.backToTop:hover{
+  color: #000;
+  border-bottom: 1px solid transparent;
 }
 
 /*-----Profile Styles------*/
