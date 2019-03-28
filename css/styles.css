@@ -1,5 +1,9 @@
 /*Color Wheel
-offwhite - #F8f8f8
+offwhite - #F8f8f8 Header background
+darkgold - #69501D Main background & Header border
+lightgrey - #d4d4d4 Section background
+white    - #fff     Image Borders
+
 */
 
 /*------Global Styles---------*/
@@ -10,6 +14,7 @@ offwhite - #F8f8f8
 
 /*------Base Element Styles------*/
 body{
+  margin: 0 0;
   background-color: #F8f8f8;
   font-family: 'Neuton', sans-serif;
   font-size: 1em;
@@ -17,20 +22,32 @@ body{
 }
 
 main{
-  background-color: #fff;
+  background-color: #69501D;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
   padding-bottom: 1em;
 }
 
-h2{
-  padding-top: 2em;
+section{
+  background-color: #d4d4d4;
+  padding: 1em;
+}
+
+#portfolio{
+  padding: 1.5em 0 2em 0;
 }
 
 h1,
 h2,
 h3,
 p,
+ul,
 .main-nav li{
   text-align: center;
+}
+
+.accomplishments ul li{
+  list-style-type: none;
 }
 
 p{
@@ -49,9 +66,14 @@ span{
   font-weight: bolder;
 }
 
+.section-wrapper p{
+  line-height: 1em;
+}
+
 /*------Layout Container Styles------*/
 .header-wrapper,
 .main-wrapper,
+.section-wrapper,
 .footer-wrapper{
   max-width: 75em;
   margin: 0 auto;
@@ -68,12 +90,22 @@ img{
 
 .main-img{
   margin: 4em 0 0 0;
-  padding-bottom: 2em;
+  border: 8px inset #69501D;
+}
+
+.images,
+.icon{
+  border: 8px inset #fff;
 }
 
 .main-img,
 .images{
   max-width: 20em;
+  margin: 0 auto;
+}
+
+.icon{
+  max-width: 10em;
   margin: 0 auto;
 }
 
@@ -93,6 +125,20 @@ img{
   font-weight: bold;
 }
 
+a:link,
+a:visited{
+color: #555;
+text-decoration: none;
+border-bottom: 1px solid transparent;
+}
+
+a:hover{
+color: #69501D;
+border-bottom: 1px solid #69501D;
+padding-bottom: 3px;
+transition: border-bottom 0.4s, color 0.4s;
+}
+
 .backToTop{
   display: block;
   float: right;
@@ -106,6 +152,10 @@ img{
 
 .profile{
   padding: 3em 0 2em 0;
+}
+
+.profile p{
+  padding-top: 1.5em;
 }
 
 /*------Footer Styles------*/
@@ -127,14 +177,31 @@ img{
 
 /*-------------Header Styles----------*/
 
+.nav-container{
+  width: 100%;
+}
+
+.section-wrapper{
+  width: 80%;
+}
+
+.col2{
+  width: 50%;
+  float: right;
+}
+
+.main-nav li{
+  display: inline;
+  background-color: inherit;
+}
 .main-nav{
-    display: block;
     text-align: center;
 }
 
 .profile p{
   width: 50%;
   margin: 0 0 0 1.5em;
+  padding-top: 0em;
   text-align: left;
   font-size: 1.8em;
 }
@@ -197,21 +264,24 @@ img{
 @media only screen and (min-width: 1024px) {
 
 /*-------------Header Styles----------*/
-  h1{
-    margin-top: 5px;
-  }
-
-  .profile p{
-    font-size: 2em;
+  .name{
+    float: left;
+    margin-top: .3em;
+    margin-left: 1.5em;
   }
 
   .main-nav{
       float: right;
   }
 
-  .name{
-    float: left;
+  .main-nav li{
+    display: inline-block;
   }
+
+  .profile p{
+    font-size: 2em;
+  }
+
 /*-------------Main Styles----------*/
   .col{
     width: 33.33%;
